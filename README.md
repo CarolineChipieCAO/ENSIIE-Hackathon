@@ -23,3 +23,24 @@ Vous pouvez choisir de prioriser un des 2 axes principaux :
 
 ## Critère du jury
 L'avis du jury sera basé sur les 2 axes décrits ci-dessus. 
+
+
+# Besoin d'aide ?
+Les encadrants sont là pour ça :) 
+
+### sur l'analyse de sentiment (facile)
+- avec [Vader](https://www.geeksforgeeks.org/python/python-sentiment-analysis-using-vader/)
+- avec textblob
+```python
+from textblob import TextBlob
+text = "Apple stock surged after strong earnings and optimistic guidance for the next quarter."
+blob = TextBlob(text)
+print(blob.sentiment)
+```
+- vous pouvez également vous renseigner sur les modèles Huggingface (finBERT, etc)
+
+### sur la récupération de prix de marché
+Faites un petit tour [ici]() pour yfinance
+
+### sur un dataset 
+Si vraiment vous faites face à un soucis d'extraction de données financier et sentiment, PAS DE PANIQUE ! Faites un tour sur ce [site](https://www.kaggle.com/code/yashvi/reliance-stock-prices-with-news-sentiment/notebook) pour récupérer un dataset
