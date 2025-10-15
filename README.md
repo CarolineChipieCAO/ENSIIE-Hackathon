@@ -26,7 +26,7 @@ L'avis du jury sera basé sur les 2 axes décrits ci-dessus.
 
 
 # Besoin d'aide ?
-Les encadrants sont là pour ça :) 
+Les encadrants sont là pour ça :) mais avant cela, jetez un oeil ...
 
 ### sur l'analyse de sentiment (facile)
 - avec [Vader](https://www.geeksforgeeks.org/python/python-sentiment-analysis-using-vader/)
@@ -42,5 +42,5 @@ print(blob.sentiment)
 ### sur la récupération de prix de marché
 Faites un petit tour [ici]() pour yfinance
 
-### sur un dataset 
+### sur l'obtention un dataset 
 Si vraiment vous faites face à un soucis d'extraction de données financier et sentiment, PAS DE PANIQUE ! Faites un tour sur ce [site](https://www.kaggle.com/code/yashvi/reliance-stock-prices-with-news-sentiment/notebook) pour récupérer un dataset
