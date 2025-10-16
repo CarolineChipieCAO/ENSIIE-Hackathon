@@ -40,7 +40,47 @@ print(blob.sentiment)
 - vous pouvez également vous renseigner sur les modèles Huggingface (finBERT, etc)
 
 ### sur la récupération de prix de marché
-Faites un petit tour [ici]() pour yfinance
+Faites un petit tour [ici](https://pypi.org/project/yfinance/) pour la documentation yfinance. Un exemple simple d'utilisation d'yfinance : [get_stock.py](https://github.com/CarolineChipieCAO/ENSIIE-Hackathon/blob/main/get_stock.py)
+
+### sur la récupération des messages Reddit
+Le moyen le plus simple pour collecter des données Reddit est d’utiliser **l’API officielle** via la librairie **[PRAW](https://praw.readthedocs.io)**.
+
+#### Étapes de configuration
+
+1. Crée un compte sur [Reddit](https://www.reddit.com/).  
+2. Rendez-vous sur la page des applications : [https://old.reddit.com/prefs/apps/](https://old.reddit.com/prefs/apps/)  
+3. Clique sur **“create another app…”**, choisis le type **“script”**, et remplis les champs demandés.  
+4. Une fois l’application créée, tu obtiendras deux identifiants :
+   - `client_id`
+   - `client_secret`
+
+*(Voir capture d’écran ci-dessous pour repère visuel)*
+
+![](https://github.com/CarolineChipieCAO/ENSIIE-Hackathon/blob/main/doc/reddit_api.png?raw=true)
+
+Documentation Praw : [https://praw.readthedocs.io](https://praw.readthedocs.io)
+
+Voir les exemples [reddit_search.py](https://github.com/CarolineChipieCAO/ENSIIE-Hackathon/blob/main/reddit_search.py), [reddit_stream_comment.py](https://github.com/CarolineChipieCAO/ENSIIE-Hackathon/blob/main/reddit_stream_comment.py) et [reddit_stream_submission.py](https://github.com/CarolineChipieCAO/ENSIIE-Hackathon/blob/main/reddit_stream_submission.py)
+
+
+Pour se connecter remplace les valeurs : 
+```
+<your_client_id> : client_id
+<your_client_secret> : client_secret
+<your_password> : password du compte Reddit
+<your_username> : username du compte Reddit
+<your_user_agent> : "demo script"
+
+```
+### Exemples de subreddits à suivre
+Subreddits financiers "sérieux" : 
+[investing](https://www.reddit.com/r/investing/), [StockMarket](https://www.reddit.com/r/StockMarket/), [WallStreetbetsELITE](https://www.reddit.com/r/WallStreetbetsELITE/), [economy](https://www.reddit.com/r/economy/)
+
+Subreddits trading/spéculation : 
+[wallstreetbets](https://www.reddit.com/r/wallstreetbets/), [options](https://www.reddit.com/r/options/), [pennystocks](https://www.reddit.com/r/pennystocks/), [Daytrading](https://www.reddit.com/r/Daytrading/)
+
+Subreddits spécialisés par secteur :
+[AMD_Stock](https://www.reddit.com/r/AMD_Stock/), [NVDA_Stock](https://www.reddit.com/r/NVDA_Stock/), [Bitcoin](https://www.reddit.com/r/Bitcoin/), [CryptoCurrency](https://www.reddit.com/r/CryptoCurrency/)
 
 ### sur l'obtention un dataset 
 Si vraiment vous faites face à un soucis d'extraction de données financier et sentiment, PAS DE PANIQUE ! Faites un tour sur ce [site](https://www.kaggle.com/code/yashvi/reliance-stock-prices-with-news-sentiment/notebook) pour récupérer un dataset
